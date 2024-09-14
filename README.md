@@ -69,4 +69,11 @@ function doPost(e) {
 
 <img width="500" alt="dopost" src="https://github.com/user-attachments/assets/ed6036c6-c451-4d24-aa3e-ba5aef465ac6">
 
-
+**STEP:6**
+> Apps Script Editor find right up corner **Deploy** then **New Deployment**
+> New window appear so find **Configuration** gear icon click it then fill up as below:
+* Description: Mailing List Form for and example you can define what you want but should be small name to recall it.
+* Web app → Execute As: Me
+* Web app → Who has access: Anyone
+* Save it.
+> At this stage :warning: copy url it will be use your html css form so take care it.
