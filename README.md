@@ -184,6 +184,7 @@ function doPost(e) {
 **FINANLY FORM & SHEET RECORD**
 
 ![submit](https://github.com/user-attachments/assets/2fe2c777-a6d0-4765-986b-9c9abf6f53af)
-![sheet](https://github.com/user-attachments/assets/2c24393b-df05-488c-80a8-250b58f2d75f)
+![test mail success](https://github.com/user-attachments/assets/d4cc8a9c-bf2e-444b-9077-d38e98cea178)
+
 
 
