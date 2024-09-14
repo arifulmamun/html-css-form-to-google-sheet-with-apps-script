@@ -181,3 +181,9 @@ function doPost(e) {
 </body>
 </html>
 ```
+**FINANLY FORM & SHEET RECORD**
+
+![submit](https://github.com/user-attachments/assets/2fe2c777-a6d0-4765-986b-9c9abf6f53af)
+![sheet](https://github.com/user-attachments/assets/2c24393b-df05-488c-80a8-250b58f2d75f)
+
+
