@@ -76,4 +76,108 @@ function doPost(e) {
 * Web app → Execute As: Me
 * Web app → Who has access: Anyone
 * Save it.
-> At this stage :warning: copy url it will be use your html css form so take care it.
+> **IMPORTANT** At this stage :warning: copy url it will be use your html css form so take care it.
+
+**HTML CSS JS** code for your website:
+```js
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #fff;
+    }
+    form {
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+    button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <form id="contactForm" onsubmit="return validateForm();" target="iframe" method="POST" action="YOUR_WEBAPP_URL">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="email"required><br><br>
+
+    <label for="question">Your Question:</label>
+    <textarea id="question" name="question" placeholder="what about"required></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+<iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
+<div id="successMessage" style="display: none;">
+    <p>Your message has been sent successfully!</p>
+  </div>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const question = document.getElementById("question").value;
+
+      // Check for empty fields
+      if (name === "" || email === "" || question === "") {
+        alert("Please fill in all required fields.");
+        return false;
+      }
+
+      // Validate email
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+    // If validation passes, submit the form and display the success message
+      document.getElementById("contactForm").submit();
+      document.getElementById("successMessage").style.display = "block";
+
+      // Set a timeout to hide the success message after 15 seconds
+      setTimeout(function() {
+        document.getElementById("successMessage").style.display = "none";
+      }, 15000);
+
+      document.getElementById("contactForm").reset(); // Clear form fields
+      return false;
+    }
+  </script>
+</body>
+</html>
+```
