@@ -184,7 +184,9 @@ function doPost(e) {
 **FINANLY FORM & SHEET RECORD**
 
 ![submit](https://github.com/user-attachments/assets/2fe2c777-a6d0-4765-986b-9c9abf6f53af)
-![test mail success](https://github.com/user-attachments/assets/d4cc8a9c-bf2e-444b-9077-d38e98cea178)
+
+<img width="500" alt="sheet emails" src="https://github.com/user-attachments/assets/d4cc8a9c-bf2e-444b-9077-d38e98cea178">
 
 
+**Thanks** :smile: :smile: 
 
